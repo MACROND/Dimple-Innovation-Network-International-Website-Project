@@ -90,6 +90,7 @@ nav span a{
 }
 
 .text{
+    padding-top: 10px;
     position: static;
     font-size: 150px;
     font-weight: bolder;
