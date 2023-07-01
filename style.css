@@ -1,4 +1,4 @@
-body{
+gebody{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,7 +11,7 @@ body{
     height: 100%;
    overflow: hidden;
     position: relative;
-    background-image: url(back1.jpeg);
+    background-image: url(Homepage/img/back1.jpeg);
     background: rgba(7, 4, 4, 0.2);
     background-position: center;
     background-repeat: no-repeat;
