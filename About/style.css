@@ -197,6 +197,20 @@ nav span a{
 .footer-right{
     display: inline-block;
     vertical-align: top;
+}.footer{
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+.footer-left,
+.footer-center,
+.footer-right{
+    display: inline-block;
+    vertical-align: top;
 }
 @media screen and (max-height:900px){
     footer{
