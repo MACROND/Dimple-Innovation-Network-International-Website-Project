@@ -90,7 +90,6 @@ nav span a{
 }
 
 .text{
-    padding-top: 10px;
     position: static;
     font-size: 150px;
     font-weight: bolder;
@@ -141,10 +140,8 @@ nav span a{
 }
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
-}
-.footer{
     background-color: #040a18;
     box-sizing: border-box;
     width: 100%;
@@ -159,11 +156,7 @@ footer{
     display: inline-block;
     vertical-align: top;
 }
-@media(max-height:800px){
-    footer{
-        position: static;
-    }
-}
+
 .footer .footer-left{
     width: 30%;
 }
@@ -260,11 +253,8 @@ footer{
     background-color: rgb(241, 55, 55);
 }
 
-.footer .footer-center i{
-    margin-left: 0;
-}
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 900px) {
     .container{
         margin: 0;
 
@@ -304,9 +294,4 @@ footer{
         padding: 10px;
         height: 300px;
         width: 300px;
-    }    
-
-    footer{
-        position: static;
     }
-}
