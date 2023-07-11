@@ -99,19 +99,19 @@ h3{
     }
 @keyframes change{
     0%{
-        background-image: url(img/image1.jpeg);
+        background-image: url(Homepage/img/image1.jpeg);
     }
     25%{
-        background-image: url(img/image3.jpeg);
+        background-image: url(Homepage/img/image3.jpeg);
     }
     50%{
-        background-image: url(img/image2.jpeg);
+        background-image: url(Homepage/img/image2.jpeg);
     }
     75%{
-        background-image: url(img/back4.jpeg);
+        background-image: url(Homepage/img/back4.jpeg);
     }
     100%{
-        background-image: url(img/image4.jpeg);
+        background-image: url(Hompegae/img/image4.jpeg);
     }
 }
 @media(max-height:800px){
