@@ -139,9 +139,7 @@ nav span a{
     border-radius: 10%;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
+.footer{
     background-color: #040a18;
     box-sizing: border-box;
     width: 100%;
@@ -156,7 +154,11 @@ footer{
     display: inline-block;
     vertical-align: top;
 }
-
+@media screen and (max-height:900px){
+    footer{
+        position: static;
+    }
+}
 .footer .footer-left{
     width: 30%;
 }
@@ -248,13 +250,22 @@ footer{
     margin-bottom: 5px;
     margin-top: 1px;
 }
-
 .footer .footer-media a:hover{
     background-color: rgb(241, 55, 55);
 }
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width:900px){
+    .footer-left,
+.footer-center,
+.footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+}
+.footer .footer-center i{
+    margin-left: 0;
+}
+}@media screen and (max-width: 900px) {
     .container{
         margin: 0;
 
