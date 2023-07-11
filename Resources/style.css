@@ -79,7 +79,7 @@ nav span a{
 }
 
 .resource{
-    position: fixed;
+    position: static;
     background-image: url('img/0.jpeg');
     height: 210px;
     background-size: cover;
