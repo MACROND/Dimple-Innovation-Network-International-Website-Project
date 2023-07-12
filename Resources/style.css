@@ -90,6 +90,7 @@ nav span a{
 }
 
 .text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     position: static;
     font-size: 150px;
     font-weight: bolder;
