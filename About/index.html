@@ -19,13 +19,15 @@
                 <p>Dimple Innovation Network International</p>
             </div>
             
-            <ul>
-                <li><a href="../index.html">Home</a></li>
+            <ul id="sidemenu">
+            <li><a href="../index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="../Resources/index.html">Resources</a></li>
-            <li><a href="#">Events</a></li>     
-            </ul>
+            <li><a href="#">Events</a></li> 
             <span><a href="#">Donate</a></span>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
            </nav>
     
 
@@ -84,7 +86,16 @@
             </div>
           </footer>
     
-
+<script>
+         var sidemenu= document.getElementById("sidemenu");
+ 
+         function openmenu(){
+             sidemenu.style.right="0";
+         }
+         function closemenu(){
+             sidemenu.style.right="-200px";
+         }
+     </script>
     
     </body>
 </html>
