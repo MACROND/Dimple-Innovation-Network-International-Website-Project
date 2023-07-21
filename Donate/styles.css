@@ -102,6 +102,14 @@ h1{
     font-size: 50px;
 }
 
+nav .fa-regular {
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
+
+
 @media screen and (max-width: 900px) {
     nav img{
         margin-top: 10px;
