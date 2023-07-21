@@ -6,7 +6,12 @@ body{
     font-family: sans-serif,'Algerian';
 }
 
-
+nav .fa-regular {
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
 .section_top{
     width: 100%;
     height: 100%;
