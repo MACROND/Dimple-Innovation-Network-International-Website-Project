@@ -27,14 +27,15 @@
                </div>
                
            <div>         
-             <form id="joinUsForm" >
-               <input name="fullname" type="text" id="name" placeholder="Your Fullname"required><br>
+             <!-- <form id="joinUsForm" action="http://your-api-url:3000/api/submitForm" method="post">  do some changes here-->
+              <form id="joinUsForm"> 
+               <input type="text" id="name" placeholder="Your Fullname" required><br>
                
-               <input name="email" type="Email" id="email" placeholder="Email" required><br>
-               <input name="phone"    type="tel" id="phone" placeholder="phone"  required><br>
+               <input type="Email" id="email" placeholder="Email" required><br>
+               <input type="tel" id="phone" placeholder="phone"  required><br>
                
-               <input   name="organization" type="text"  id="organization" placeholder="Current Organization" required><br>
-               <input  name="position" type="text" id="position" placeholder="Position/title" required><br>
+               <input type="text"  id="organization" placeholder="Current Organization" required><br>
+               <input type="text" id="position" placeholder="Position/title" required><br>
              
                
                
@@ -43,14 +44,14 @@
                   </h1>
                   <table >
                <tr >
-                <select name="area of interest" style="margin-left: 0px; " class="multiline-select">
-                <option> Development </option>
-                <option>Team Building </option>
-                <option> Change Management</option>
+                <select  style="margin-left: 0px; " class="multiline-select">
+                <option>Development</option>
+                <option>Team Building</option>
+                <option>Change Management</option>
                 <option>Emotional Intelligence</option>
                 <option>Communication Skill</option>
                 <option>Strategic Planning</option>
-                <option> Diversity and Inclusion</option>
+                <option>Diversity and Inclusion</option>
                 <option>Other</option>
               </select>
               </tr>
@@ -61,11 +62,11 @@
                 </h1>
                 <table>
               <td >
-                <select name="outreach" >
-                  <option >Social media (Facebook, Twitter, Instagram, etc.)</option>
-                  <option >Word of mouth</option>
-                  <option >Event or trade show</option>
-                  <option >Other</option>
+                <select name="Outreach">
+                  <option value="">Social media (Facebook, Twitter, Instagram, etc.)</option>
+                  <option value="">Word of mouth</option>
+                  <option value="">Event or trade show</option>
+                  <option value="">Other</option>
                 </select>
               </td>
             </table>
@@ -89,11 +90,11 @@
                 <td>
               
             
-                <input name="thoughts" style="width: 500px; height: 30px; text-align: left; " type="text" id="thoughts" placeholder="Please type here">
+                <input style="width: 500px; height: 30px; text-align: left; " type="text" id="thoughts" placeholder="Please type here">
               </td>
             
           </table>
-         <button class="submit" id="submit" >Join</button> 
+         <button class="submit" >Join</button> 
              </form>   
             </div> 
                
@@ -101,33 +102,5 @@
            </div>
          </section>
 
-         <script>
-          const scriptURL = 'https://script.google.com/macros/s/AKfycbwWa5TTqvDHiLEdYVySkCFdq4RDvyRyByY0CDAkXN3heB-RFmmFHLc4PohkAuMA1dOdHw/exec'
-          const form = document.querySelector('#joinUsForm')
-          const btn = document.querySelector('#submit')
-      
-      
-          form.addEventListener('submit', e => {
-            e.preventDefault()
-            btn.disabled = true
-            btn.innerHTML = "Loading..."
-      
-            console.log(form)
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-              .then(response => { 
-                    btn.disabled = false
-            btn.innerHTML = "Submit"
-                  alert('Form submitted succesfully!', response) })
-                  
-              .catch(error => {
-                           btn.disabled = false
-            btn.innerHTML = "Submit"
-                  alert('Error!', error.message)})
-
-                  alert("Thanks for joining us. You will be contacted for more interactions");
-
-                  window.location.href = "https://dimpleinnovation.netlify.app";
-
-          })
-      </script>
+         <script src="JoinUs.js"></script>
         </body>
