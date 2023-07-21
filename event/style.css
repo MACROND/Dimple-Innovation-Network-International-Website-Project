@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, 'poppins';
+}
+.top-banner{
+    width: 100%;
+    height: 350px;
+    background-image: url(img/events.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+}
+
+
+button{
+    border: none;
+    background:rgb(241, 55, 55);
+    padding: 10px 26px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .4s;
+    position: absolute;
+}
+.message{
+    color:rgb(252, 249, 250);
+    padding-top: 100px;
+    font-size: 38px;
+    text-shadow:black ;
+}
+.date-box{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(8, 186, 240);
+    text-align: center;
+    justify-content: center;
+    float: left;
+    align-items: center;
+}
+span{
+    font-size: 18px;
+}
+h3{
+    color: #ffff;
+    padding-top: 20px;
+}
+h1{
+    margin-left: 45%;
+    margin-top: 30px;
+}
+#note{
+    margin-left:44.5% ; 
+    font-weight: 3px;
+    color: rgb(82, 84, 85);
+    font-size: 20px;
+}
+.conference-box{
+    border: 2px;
+    border-style: groove;
+    height: 117px;
+    width: 700px;
+    text-align: center;
+    
+}
+h2{
+    padding-top: 15px;
+}
+.main-cards{
+    margin-left: 20%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.tab-titles{
+    display: flex;
+    margin-left: 38%;
+}
+
+.tab-links{
+    margin: 20px;
+    font: size 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 125px;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-links::after{
+    width: 100%;
+}
+.tab-links:hover::after{
+    width: 0;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b547b5;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
+#first{
+    margin-bottom: 35px;
+}
+#second{
+    margin-bottom: 35px;
+}
+#third{
+    margin-bottom: 35px;
+}
+#notes{
+    color: rgb(104, 106, 107);
+}
+@media(max-width:900px){
+    .top-banner{
+        position: static;
+        max-height: 70%;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .main-cards{
+        margin-left: 8.5%;
+    }
+    .message{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 28px;
+        margin-left: 142px;
+    }
+    .date-box{
+        max-width: 20%;
+        max-height: 80px;
+    }
+    .conference-box{
+        max-width: 90%;
+        max-height: 78px;
+    }
+    span{
+        font-size: 18px;
+    }
+     h3{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    #main{
+        font-size: 38px;
+    }
+    #note{
+        margin-left: 142px;
+    }
+    .tab-titles{
+        margin-left: 12%;
+    }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events|upcoming and past events</title>
+    <link rel="stylesheet" href="style.css">
+    <!---<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    --->
+    <script src="https://kit.fontawesome.com/35e2b1034f.js" crossorigin="anonymous"></script></head>
+<body>
+    <div class="top-banner">
+        <div class="message">
+            <h2 id="main">Welcome.</h2>
+            <p>Get updated on upcoming events of the organization.</p>
+        </div>
+    </div>
+    <h1>Events.</h1> 
+
+    <div class="tab-titles">
+        <p class="tab-links active-links" onclick="opentab('skills')">Past events</p>
+        <p class="tab-links" onclick="opentab('experience')">Upcoming events</p>
+        
+    </div>
+    <div class="tab-contents active-tab" id="skills">
+        <div class="main-cards">
+            <div id="first">
+                <div class="date-box">
+                    <h3>
+                        <span>16th</span><br>July, 2022.
+                    </h3>
+                </div>
+                <div class="conference-box">
+                    <h2>University Opportunities</h2>
+                    <p id="notes">Maximizing opportunities in the universities.</p>
+                </div>
+            </div>
+    
+            <div id="second">
+                <div class="date-box" style="background-color: rgb(243, 57, 88);">
+                    <h3>
+                        <span>18th</span><br>february, 2022.
+                    </h3>
+                </div>
+                <div class="conference-box">
+                    <h2>In or Out </h2>
+                    <p id="notes">A matter of choices</p>
+                </div>
+            </div>
+            <div id="third">
+                <div class="date-box" style="background-color: rgb(154, 233, 35);">
+                    <h3>
+                        <span>10th</span><br>June, 2023.
+                    </h3>
+                </div>
+                <div class="conference-box">
+                    <h2>Transformational leadership</h2>
+                    <p id="notes">Raising agents of change</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="tab-contents" id="experience">
+        <div class="main-cards">
+            <div id="first">
+                <div class="date-box">
+                    <h3>
+                        <span>December</span><br>2023.
+                    </h3>
+                </div>
+                <div class="conference-box">
+                    <h2>Donation Exercise</h2>
+                    <p id="notes">Reaching out to the less fortunate.</p>
+                </div>
+            </div>
+    
+            <div id="second">
+                <div class="date-box" style="background-color: rgb(243, 57, 88);">
+                    <h3>
+                        <span>coming</span><br>soon.
+                    </h3>
+                </div>
+                <div class="conference-box">
+                    <h2> Online Seminar</h2>
+                    <p id="notes">Impacting the youth with leadership skills.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2022- Curreent</span><br/>
+            BSc. Computer Science at University of Ghana</li>
+
+            <li><span>2019-2021</span><br/>
+            General Science at St. Thomas Aquinas Senior High</li>
+
+            <li><span>2016-2018</span><br/>
+            Basic School at Scared Heart School Complex</li>
+        </ul>
+    </div>
+
+
+
+    
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    
+</body>
+</html>
