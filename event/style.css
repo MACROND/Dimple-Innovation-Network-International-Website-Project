@@ -72,6 +72,12 @@ nav span a{
     color: #ffffff;
     margin-right: 15px;
 }
+nav .fa-regular {
+    display: none;
+}
+nav .fa-solid{
+    display: none;
+}
 
 button{
     border: none;
