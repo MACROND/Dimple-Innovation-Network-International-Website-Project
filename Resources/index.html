@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RESOURCES</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/35e2b1034f.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="apple-touch-icon" sizes="180x180" href="../Homepage/img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../Homepage/img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../Homepage/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="../Homepage/img/favicon/site.webmanifest">
-</head>
+   </head>
 <body>
     <nav>
         <div class="logo">
@@ -20,14 +20,16 @@
             <p>Dimple Innovation Network International</p>
         </div>
         
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../About/index.html">About</a></li>
+        <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">Resources</a></li>
-            <li><a href="#">Events</a></li>      
+            <li><a href="#">Events</a></li>  
+            <span><a href="#">Donate</a></span>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
         </ul>
-        <span><a href="#">Donate</a></span>
-       </nav>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
     <div class="body">
     <div class="resource">  
         <div class="text">RESOURCES</div>
@@ -38,7 +40,7 @@
     <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/1.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/1.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">12 Leadership Essentials-2</h3>
                 <p class="card-text">Sam Gand</p>
@@ -49,7 +51,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/2.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/2.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">35 Marks Of Irrepressible Leader</h3>
                 <p class="card-text">Matthew Ashimolowo</p>
@@ -60,7 +62,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/3.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/3.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Aids To Leadership</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -71,7 +73,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/4.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/4.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Attitude 101 - What Every Leader Needs to Know</h3>
                 <p class="card-text">John C. Maxwell</p>
@@ -82,7 +84,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/5.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/5.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Educational Leadership</h3>
                 <p class="card-text">Harry Tomlinson</p>
@@ -93,7 +95,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/6.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/6.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Essentials of leadership -1</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -104,7 +106,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/8.png" alt="Card image" style="width: 400px;" height="400px">
+          <img class="card-img-top" src="img/8.png" alt="Card image" style="width: 350px;" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Excellence In Leadership</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -115,7 +117,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/9.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/9.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Failsafe Leadership</h3>
                 <p class="card-text">Matthew Ashimolowo</p>
@@ -126,7 +128,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/10.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/10.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Good Leaders Ask Great Question</h3>
                 <p class="card-text">John Maxwell</p>
@@ -137,7 +139,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/11.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/11.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">In Charge Finding the Leader Within You</h3>
                 <p class="card-text">Myles Munroe</p>
@@ -148,7 +150,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/12.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/12.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leading an Inspired Life</h3>
                 <p class="card-text">Jim Rohn</p>
@@ -159,7 +161,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/13.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/13.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Developing The Leader Within You</h3>
                 <p class="card-text">John C Maxwell</p>
@@ -170,7 +172,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/14.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/14.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leadership And Church Size Dynamics</h3>
                 <p class="card-text">Tim Kelle</p>
@@ -181,7 +183,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/15.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/15.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leadership Explosion Multiply</h3>
                 <p class="card-text">Joel Comiskey</p>
@@ -192,7 +194,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/16.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/16.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leadership Gold Lessons I've Learnt</h3>
                 <p class="card-text">John Maxwell</p>
@@ -203,7 +205,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/17.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/17.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leadership Made Easy</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -214,7 +216,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/18.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/18.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leadership Principles Of Prophet Moses</h3>
                 <p class="card-text">Matthew Ashimolowo</p>
@@ -225,7 +227,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/19.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/19.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leading Difficult People</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -236,7 +238,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/20.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/20.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leading Difficult People</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -247,7 +249,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/21.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/21.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leading From The Second Chair </h3>
                 <p class="card-text">Mike Bonem & Roger  Patterson</p>
@@ -258,7 +260,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/22.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/22.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Leading With Values</h3>
                 <p class="card-text">Edward D. Hess, Kim S. Cameron</p>
@@ -269,7 +271,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/23.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/23.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Developing The Leader</h3>
                 <p class="card-text">John C. Maxwell 2 in 1</p>
@@ -280,7 +282,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/24.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/24.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The 21 Irrefutable Laws Of Leadership</h3>
                 <p class="card-text">John C. Maxwell 2 in 1</p>
@@ -291,7 +293,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/25.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/25.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Art of Leadership </h3>
                 <p class="card-text">Dag Heward-Mills</p>
@@ -302,7 +304,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/26.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/26.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Bible On Leadership </h3>
                 <p class="card-text">Lorin Woolfe</p>
@@ -313,7 +315,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/27.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/27.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Leadership Collection</h3>
                 <p class="card-text">Dr. Adrian Rogers</p>
@@ -324,7 +326,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/28.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/28.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Leadership Secrets Of Billy Graham</h3>
                 <p class="card-text">Harold Myra and Marshal Shelley</p>
@@ -335,7 +337,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/29.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/29.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Leader Who Had No Title</h3>
                 <p class="card-text">Robin Sharma</p>
@@ -346,7 +348,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/30.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/30.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Spirit of Leadership</h3>
                 <p class="card-text">Dr. Myles Monroe</p>
@@ -357,7 +359,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/31.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/31.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">The Successful Leader</h3>
                 <p class="card-text">Dag Heward Mills</p>
@@ -368,7 +370,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/32.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/32.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">What Fits A Man For Leadership</h3>
                 <p class="card-text">Bro Gbile Akanni</p>
@@ -379,7 +381,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/33.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/33.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Wisdom For Leaders</h3>
                 <p class="card-text">Dag Heward Mills </p>
@@ -390,7 +392,7 @@
     </div>
     <div class="container mt-3" style="width: 430px;">
         <div class="card text-center mb-3" style="width:400px">
-          <img class="card-img-top" src="img/34.png" alt="Card image" style="width:400px" height="400px">
+          <img class="card-img-top" src="img/34.png" alt="Card image" style="width:350px" height="400px">
              <div class="card-body">
                 <h3 class="card-title">Working With Christian Servant Leadership</h3>
                 <p class="card-text">Gary E. Roberts </p>
@@ -442,6 +444,18 @@
             <a href="#"><i class="fa-brands fa-telegram"></i></a>
         </div>
       </footer>
+
+      <script>
+         var sidemenu= document.getElementById("sidemenu");
+ 
+         function openmenu(){
+             sidemenu.style.right="0";
+         }
+         function closemenu(){
+             sidemenu.style.right="-200px";
+         }
+     </script>
+
       
 </body>
 </html>
