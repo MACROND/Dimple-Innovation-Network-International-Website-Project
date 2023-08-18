@@ -162,7 +162,7 @@ nav ul li a{
     font-weight: bold;
     color: white;
 }
-nav ul i{
+nav i{
     display: none;
 }
 nav ul li a:hover{
